@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shape", "..\Shape\Shape.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeList", "..\ShapeList\ShapeList.csproj", "{71493741-407F-463D-9E66-2E07C748BFAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ellipse", "..\Ellipse\Ellipse.csproj", "{D70A9D91-358A-44C4-9E2A-428717A4F802}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{71493741-407F-463D-9E66-2E07C748BFAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71493741-407F-463D-9E66-2E07C748BFAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71493741-407F-463D-9E66-2E07C748BFAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70A9D91-358A-44C4-9E2A-428717A4F802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70A9D91-358A-44C4-9E2A-428717A4F802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70A9D91-358A-44C4-9E2A-428717A4F802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70A9D91-358A-44C4-9E2A-428717A4F802}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

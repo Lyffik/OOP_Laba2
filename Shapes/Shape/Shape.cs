@@ -5,12 +5,13 @@ namespace Shapedll
 {
     public abstract class Shape
     {
-        protected List<Point> points=new List<Point>();
+        protected List<Point> points;
 
         protected Shape(string name)
         {
             Pen = new Pen(Color.Black);
             ShapeName = name;
+            points = new List<Point>();
         }
 
         public virtual void AddPoint(Point p)

@@ -10,8 +10,23 @@ namespace Eclipsedll
 {
     public class Ellipse : Shape
     {
-        public Ellipse() : base("Circle")
+        public Ellipse() : base("Ellipse")
         {
+        }
+        public override void AddPoint(Point p)
+        {
+            if (points.Count < 2)
+            {
+                points.Add(p);
+            }
+            else
+            {
+                EditPoint(p);
+            }
+        }
+        public void EditPoint(Point p)
+        {
+            points[1] = p;
         }
         public override void Draw(Graphics graphics)
         {
@@ -34,8 +49,7 @@ namespace Eclipsedll
             }
             width = Math.Abs(points[0].X - points[1].X);
             heigth = Math.Abs(points[0].Y - points[1].Y);
-            Rectangle rectangle = new Rectangle(x,y,width,heigth);
-            graphics.DrawEllipse(Pen, rectangle);
+            graphics.DrawEllipse(Pen, new Rectangle(x,y,width,heigth));
 
         }
     }
