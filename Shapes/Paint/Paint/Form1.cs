@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
+using Linedll;
 using Shapedll;
 using ShapeListdll;
 
@@ -39,26 +40,6 @@ namespace Paint
         }
 
         private Boolean drag = false;
-        private Point pBeg=new Point(0,0), pEnd=new Point(0,0);
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
-        {
-           
-        }
-
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
-        {
-          
-        }
-
-        private void Form1_MouseUp(object sender, MouseEventArgs e)
-        {
-            
-        }
-
-        private void Form1_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -74,6 +55,7 @@ namespace Paint
             if (drag)           // Если режим рисования включен
             {
                 shape.AddPoint(e.Location); // Фиксация координат текущего положения мыши
+                pictureBox.Invalidate();
             }
         }
 
