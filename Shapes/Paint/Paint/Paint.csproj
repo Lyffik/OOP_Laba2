@@ -42,9 +42,6 @@
     <Reference Include="Pilygondll">
       <HintPath>..\..\Pilygon\bin\Debug\Pilygondll.dll</HintPath>
     </Reference>
-    <Reference Include="PolyLine">
-      <HintPath>..\..\PolyLine\PolyLine\PolyLine\bin\Debug\PolyLine.dll</HintPath>
-    </Reference>
     <Reference Include="Rectdll">
       <HintPath>..\..\Rect\bin\Debug\Rectdll.dll</HintPath>
     </Reference>

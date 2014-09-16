@@ -16,6 +16,7 @@ namespace Paint
         private Shape shape;
         private ShapesList shapeList=new ShapesList();
         private Dictionary<string, Type> shapes;
+        private Boolean drawing = false;
         public Form1()
         {
             InitializeComponent();
@@ -39,22 +40,16 @@ namespace Paint
         {
         }
 
-        private Boolean drag = false;
-
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            shape = (Shape)Activator.CreateInstance(shapes[ShapePicker.SelectedItem.ToString()]);
-            shapeList.AddShape(shape);
-            shape.AddPoint(e.Location);
-            shape.AddPoint(e.Location);
-            drag = true;        // Включение режима рисования
+        
         }
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (drag)           // Если режим рисования включен
+            if (drawing)           
             {
-                shape.AddPoint(e.Location); // Фиксация координат текущего положения мыши
+                shape.EditLastPoint(e.Location); 
                 pictureBox.Invalidate();
             }
         }
@@ -67,10 +62,33 @@ namespace Paint
 
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
-            if (drag)               // Если режим рисования включен
+
+        }
+
+        private void pictureBox_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (drawing)
             {
-                drag = false;         // Выключить режим рисования
-                shape.AddPoint(e.Location);    // Фиксация текущих координат мыши
+                drawing = false;
+                shape.EditLastPoint(e.Location);
+                shape.EndDraw();
+                pictureBox.Invalidate();
+            }
+        }
+
+        private void pictureBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (drawing)
+            {
+                shape.AddPoint(e.Location);
+            }
+            else
+            {
+                shape = (Shape)Activator.CreateInstance(shapes[ShapePicker.SelectedItem.ToString()]);
+                shapeList.AddShape(shape);
+                shape.AddPoint(e.Location);
+                shape.AddPoint(e.Location);
+                drawing = true;
             }
         }
     }

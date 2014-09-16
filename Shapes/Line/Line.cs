@@ -14,18 +14,13 @@ namespace Linedll
 
         public override void AddPoint(Point p)
         {
-            if (points.Count<2)
-            {
+            if (points.Count < 2)
                 points.Add(p);
-            }
             else
-            {
-                EditPoint(p);
-            }
-          
+                EditLastPoint(p);  
         }
 
-        public void EditPoint(Point p)
+        public override void EditLastPoint(Point p)
         {
             points[1] = p;
         }

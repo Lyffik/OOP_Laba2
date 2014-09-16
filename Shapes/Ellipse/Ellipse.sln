@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolyLine", "PolyLine\PolyLine.csproj", "{5D0CCB31-1511-41C1-A2DB-0C9DA57384A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ellipse", "Ellipse.csproj", "{D70A9D91-358A-44C4-9E2A-428717A4F802}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5D0CCB31-1511-41C1-A2DB-0C9DA57384A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D0CCB31-1511-41C1-A2DB-0C9DA57384A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D0CCB31-1511-41C1-A2DB-0C9DA57384A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D0CCB31-1511-41C1-A2DB-0C9DA57384A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70A9D91-358A-44C4-9E2A-428717A4F802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70A9D91-358A-44C4-9E2A-428717A4F802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70A9D91-358A-44C4-9E2A-428717A4F802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70A9D91-358A-44C4-9E2A-428717A4F802}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

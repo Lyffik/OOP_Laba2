@@ -36,20 +36,21 @@
             // pictureBox
             // 
             this.pictureBox.BackColor = System.Drawing.Color.White;
-            this.pictureBox.Location = new System.Drawing.Point(224, 12);
+            this.pictureBox.Location = new System.Drawing.Point(-1, 39);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(568, 337);
+            this.pictureBox.Size = new System.Drawing.Size(888, 464);
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
             this.pictureBox.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
+            this.pictureBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseClick);
+            this.pictureBox.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseDoubleClick);
             this.pictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             this.pictureBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
-            this.pictureBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
             // 
             // ShapePicker
             // 
             this.ShapePicker.FormattingEnabled = true;
-            this.ShapePicker.Location = new System.Drawing.Point(36, 52);
+            this.ShapePicker.Location = new System.Drawing.Point(12, 12);
             this.ShapePicker.Name = "ShapePicker";
             this.ShapePicker.Size = new System.Drawing.Size(121, 21);
             this.ShapePicker.TabIndex = 1;
@@ -58,11 +59,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 361);
+            this.ClientSize = new System.Drawing.Size(890, 505);
             this.Controls.Add(this.ShapePicker);
             this.Controls.Add(this.pictureBox);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "OOP_Lab2";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);

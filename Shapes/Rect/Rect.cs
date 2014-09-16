@@ -13,15 +13,12 @@ namespace Rectdll
         public override void AddPoint(Point p)
         {
             if (points.Count < 2)
-            {
                 points.Add(p);
-            }
             else
-            {
-                EditPoint(p);
-            }
+                EditLastPoint(p);
         }
-        public void EditPoint(Point p)
+
+        public override void EditLastPoint(Point p)
         {
             points[1] = p;
         }
@@ -47,7 +44,7 @@ namespace Rectdll
             }
             width = Math.Abs(points[0].X - points[1].X);
             heigth = Math.Abs(points[0].Y - points[1].Y);
-            graphics.DrawRectangle(Pen,x,y,width,heigth);
+            graphics.DrawRectangle(Pen, x, y, width, heigth);
         }
     }
 }
